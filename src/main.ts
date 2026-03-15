@@ -6,13 +6,8 @@ class MyElement extends HTMLElement {
     const shadow = this.attachShadow({ mode: 'open' })
 
     shadow.innerHTML = `
-      <style>
-        h3 {
-          color: var(--text-color, #000000);
-        }
-      </style>
       <div>
-        <h3>
+        <h3 part="text">
           <slot>Default Heading Text</slot>
         </h3>
       </div>

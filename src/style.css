@@ -1,3 +1,4 @@
-my-element {
-  --text-color: purple;
+my-element::part(text) {
+  color: seagreen;
+  font-family: sans-serif;
 }
